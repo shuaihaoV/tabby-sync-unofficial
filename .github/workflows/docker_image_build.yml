@@ -10,7 +10,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE: shuaihaoV/tabby-sync-unofficial
+  IMAGE: shuaihaov/tabby-sync-unofficial
 
 jobs:
   build-and-push:
