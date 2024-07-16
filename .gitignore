@@ -5,6 +5,7 @@
 /frontend/.next
 
 /frontend/node_modules
+
 /out/
 
 /frontend/out/
@@ -12,5 +13,3 @@
 next-env.d.ts
 
 .env.local
-
-/assets
