@@ -1,0 +1,100 @@
+{
+  "login": {
+    "title": "Login",
+    "description": "Login to Tabby Sync Unofficial",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Please enter username",
+    "tokenLabel": "Token",
+    "tokenPlaceholder": "Please enter token",
+    "submitButtonText": "Login",
+    "loginFail": "Login failed, please check if the username and token are correct",
+    "loginSuccess": "Login successful"
+  },
+  "createUser": {
+    "title": "Create Tabby Sync Unofficial User",
+    "description": "Please keep your token safe, it will only be displayed in plain text once",
+    "usernameLabel": "Username",
+    "tokenLabel": "Token",
+    "submitButtonText": "Create User",
+    "createAccountButtonText": "Create User",
+    "createAccountError": "User creation failed, please check the username input",
+    "createAccountSuccess": "User created successfully"
+  },
+  "exportConfigs": {
+    "title": "Export Configurations",
+    "description": "Export configurations as a JSON file, please keep it safe",
+    "exportButtonText": "Export Config",
+    "exportSuccess": "Configurations exported successfully",
+    "exportFail": "Configuration export failed, please check your network connection"
+  },
+  "importConfigs": {
+    "title": "Import Configurations",
+    "description": "Import JSON configuration file into Tabby Sync",
+    "importButtonText": "Import Config",
+    "importSuccess": "Configurations imported successfully",
+    "importFail": "Configuration import failed, please check your network connection or the JSON file format",
+    "fileUploaderTips": "Click to upload or drag and drop files here",
+    "fileNotSelected": "No file selected",
+    "contentFormatError": "File content format error, please check the JSON file format",
+    "configCreateError": "Configuration file creation error",
+    "configContentCreateError": "Configuration content upload error"
+  },
+  "deleteUser": {
+    "title": "Delete Personal User",
+    "description": "Delete your personal account and all associated configurations",
+    "alertTitle": "Warning: This action is irreversible",
+    "alertDescription": "Deleting your personal account is a high-risk operation, please export and backup your configurations before proceeding. Once deleted, it cannot be recovered",
+    "deleteButtonText": "Delete User",
+    "deleteSuccess": "User deleted successfully",
+    "deleteFail": "User deletion failed, please check your network connection or token",
+    "tokenLabel": "Re-enter Token",
+    "tokenError": "Token Error",
+    "tokenErrorDescription": "Token error, please check if the token is correct"
+  },
+  "rotateToken": {
+    "title": "Rotate Token",
+    "description": "Change to a new token and re-encrypt the configuration files with the new token",
+    "alertTitle": "Warning: This action is irreversible",
+    "alertDescription": "Rotating the token is a high-risk operation, please export and backup your configurations before proceeding",
+    "rotateButtonText": "Rotate Token",
+    "rotateSuccess": "Token rotated successfully",
+    "rotateFail": "Token rotation failed, please check your network connection or token",
+    "oldTokenLabel": "Enter Old Token",
+    "newTokenLabel": "New Token",
+    "tokenError": "Token Error",
+    "tokenErrorDescription": "Token error, please check if the token is correct",
+    "backupConfigsSuccess": "Configuration files backed up successfully",
+    "backupConfigsFail": "Configuration file backup failed, please check your network connection or token",
+    "patchUserFail": "User token update failed, please check your network connection or token",
+    "patchUserSuccess": "User token updated successfully"
+  },
+  "configTable": {
+    "header": {
+      "id": "ID",
+      "name": "Name",
+      "last_used_with_version": "Client Version",
+      "created_at": "Created At",
+      "modified_at": "Modified At"
+    },
+    "getConfigs": {
+      "getConfigsFail": "Failed to retrieve configurations, please check your network connection or token",
+      "getConfigsSuccess": "Configurations retrieved successfully"
+    },
+    "deleteConfigs": {
+      "deleteConfigsFail": "Failed to delete configurations, please check your network connection or token",
+      "deleteConfigsSuccess": "Configurations deleted successfully"
+    },
+    "downloadConfigs": {
+      "downloadConfigsFail": "Failed to download configurations, please check your network connection or token",
+      "downloadConfigsSuccess": "Configurations downloaded successfully"
+    },
+    "noData": "No configurations available",
+    "viewConfigTitle": "View Configuration",
+    "downloadConfigsTitle": "Download Configuration",
+    "deleteConfigsTitle": "Delete Configuration"
+  },
+  "dashbord": {
+    "title": "Welcome",
+    "description": "Tabby Sync Unofficial User Center"
+  }
+}

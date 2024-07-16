@@ -1,0 +1,21 @@
+[package]
+name = "tabby-sync-unofficial"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10.3"
+anyhow = "1.0.86"
+axum = "0.7.5"
+chrono = "0.4.38"
+env_logger = "0.11.3"
+hex = "0.4.3"
+hyper = "1.4.1"
+log = "0.4.22"
+rand = "0.8.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.120"
+sha2 = "0.10.8"
+sqlx = { version = "0.7", features = ["runtime-tokio", "sqlite","time"] }
+tokio = {version="1.38.0",features = ["full"]}
+tower-http = {version="0.5.2",features = ["full"]}
