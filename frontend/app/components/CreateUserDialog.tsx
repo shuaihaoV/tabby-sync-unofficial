@@ -35,8 +35,8 @@ export default function CreateUserDialog({
             username: username,
           }),
         }).then(async res => {
-          const res_json = await res.json();
           if (res.ok) {
+            const res_json = await res.json();
             const token = res_json.token;
             setNewToken(token);
             toast({
@@ -44,7 +44,7 @@ export default function CreateUserDialog({
               duration: 3000,
             })
           } else {
-            throw new Error(JSON.stringify(res_json));
+            throw new Error(await res.text());
           }
         }).catch(err => {
           toast({
