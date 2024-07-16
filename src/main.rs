@@ -179,7 +179,7 @@ async fn api_user_patch(
     State(pool): State<sqlx::Pool<sqlx::Sqlite>>,
 ) -> Result<(StatusCode, Json<UserInfo>), (StatusCode, std::string::String)> {
     let insert_str =
-        "UPDATE app_user SET token_hash = $1 modified_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+        "UPDATE app_user SET token_hash = $1, modified_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
          WHERE token_hash = $2 
          RETURNING *,'' as token";
     let new_token = generate_key();
