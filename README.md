@@ -26,7 +26,9 @@
     > 默认对外端口为3000,可自行修改
     
     ```bash
-    docker run -p 3000:3000 -v ./data.db:/app/data.db ghcr.io/shuaihaoV/tabby-sync-unofficial:latest
+    docker run -p 3000:3000 -v ./data:/app/data ghcr.io/shuaihaoV/tabby-sync-unofficial:master
+    # 中国大陆地区
+    docker run -p 3000:3000 -v ./data:/app/data registry.cn-hangzhou.aliyuncs.com/shuaihao/tabby-sync-unofficial:master
     ```
 
 - 创建账号,获取到的令牌即为客户端同步令牌

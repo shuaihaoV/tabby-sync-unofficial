@@ -26,7 +26,9 @@
     > The default external port is 3000, which can be modified by yourself
     
     ```bash
-    docker run -p 3000:3000 -v ./data.db:/app/data.db ghcr.io/shuaihaoV/tabby-sync-unofficial:latest
+    docker run -p 3000:3000 -v ./data:/app/data ghcr.io/shuaihaoV/tabby-sync-unofficial:master
+    # Mainland China
+    docker run -p 3000:3000 -v ./data:/app/data registry.cn-hangzhou.aliyuncs.com/shuaihao/tabby-sync-unofficial:master
     ```
 
 - Create an account, the obtained token is the client synchronization token

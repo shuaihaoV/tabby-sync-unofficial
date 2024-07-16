@@ -13,7 +13,7 @@ WORKDIR /app
 COPY --from=rust_builder /app/target/release/tabby-sync-unofficial /app
 COPY --from=rust_builder /app/migrations /app/migrations
 COPY --from=node_builder /app/frontend/out /app/static-root
-
+RUN mkdir /app/data
 EXPOSE 3000
 
 CMD ["./tabby-sync-unofficial"]

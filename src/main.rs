@@ -25,7 +25,7 @@ async fn main() -> Result<()> {
     
     utils::init_logging();
     let db_connection_str =
-        std::env::var("DATABASE_URL").unwrap_or_else(|_| "sqlite://data.db?mode=rwc".to_string());
+        std::env::var("DATABASE_URL").unwrap_or_else(|_| "sqlite://data/data.db?mode=rwc".to_string());
     let pool: sqlx::Pool<sqlx::Sqlite> = sqlx::SqlitePool::connect(&db_connection_str).await?;
     let _migrate_result = sqlx::migrate!().run(&pool).await?;
     let serve_dir = ServeDir::new("static-root");
